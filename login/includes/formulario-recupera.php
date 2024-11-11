@@ -54,6 +54,7 @@
                                <option value="1832ea24-39eb-31ed-9793-0266ad8887af">Guanabara</option>
                                <option value="1832ea89-39eb-11ed-9793-0266ad9885af">União da Vitória</option>
                                <option value="1832ea89-39eb-11eb-9793-0266ad7785af">Paraty</option>
+                               <option value="1832ea89-39eb-11eb-9793-0266ad7785at">Paquetá</option>
                                <option value="bf5bbf93-bfa4-11ee-801b-0266ad9885af">Loanda</option>
                         </select>
                         
@@ -96,8 +97,10 @@
                         echo $ip; 
                         echo ' - ';
                         echo date("d-m-Y h:i:sa");
-                        echo ' - ';
-                        echo $_SERVER['HTTP_HOST'];
+                        echo ' - [';
+                        echo $_SERVER['HTTP_USER_AGENT'];
+                        echo ']  ';
+                        
                         ?> " readonly >
                         
 
